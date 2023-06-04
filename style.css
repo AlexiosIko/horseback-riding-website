@@ -6,6 +6,9 @@
 	--button-highlight-color: #057aff
 
 }
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	width: 60%;
@@ -54,11 +57,6 @@ hr {
 	height: 400px;
 	background-color: var(--background-darker-color);
 	border-radius: 15px;
-	position: relative;
-	transition: 0.3s;
-}
-.programs-grid-container .grid-item:hover {
-	transform: translateY(-10px);
 }
 .programs-grid-container .grid-item img {
 	display: flex;
@@ -128,3 +126,14 @@ hr {
 	translate: 0px -5px;
 	transition: 0.2s;
 }
+
+/* Initially hide the grid items */
+div {
+	opacity: 0;
+	transition: opacity 1s;
+}
+  /* Add the fade-in animation when the grid item enters the viewport */
+div.fade-in {
+	opacity: 1;
+	transition: opacity 1s;
+  }
