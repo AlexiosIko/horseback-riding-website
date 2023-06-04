@@ -1,0 +1,43 @@
+:root {
+    --background-color-neutral: #ffffff;
+	--text-color-highlight: #057aff;
+	--text-color: #000000;
+	--text-background-color-highlight: #e3e3e3;
+}
+nav {
+    font-family: "MyFont";
+    padding-top: 10px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+    background-color: var(--background-color-neutral);
+	z-index: 10;
+	box-shadow: 1px 1px 5px rgb(204, 204, 204);
+	text-align: center;
+}
+nav #name {
+    color: var(--text-color);
+    float: left;
+    margin-left: 50px;
+}
+nav div {
+    float: right;
+    margin-right: 50px;
+}
+nav a {
+	border-radius: 20px;
+    color: var(--text-color);
+    transition: 0.2s;
+    text-decoration: none;
+	padding: 5px 10px;
+}
+nav a:hover {
+	color: var(--text-color-highlight);
+    transition: 0.2s;
+	background-color: var(--text-background-color-highlight)
+}
